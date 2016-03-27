@@ -12,7 +12,6 @@
 		BD8CCEE81CA818BE00B2E208 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CCEE71CA818BE00B2E208 /* ViewController.m */; };
 		BD8CCEEB1CA818BE00B2E208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8CCEE91CA818BE00B2E208 /* Main.storyboard */; };
 		BD8CCEED1CA818BE00B2E208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8CCEEC1CA818BE00B2E208 /* Assets.xcassets */; };
-		BD8CCEF01CA818BE00B2E208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8CCEEE1CA818BE00B2E208 /* LaunchScreen.storyboard */; };
 		BD8CCEF81CA819AD00B2E208 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD8CCEF71CA819AD00B2E208 /* Assets.bundle */; };
 		BD8CCEFA1CA819EB00B2E208 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CCEF91CA819EB00B2E208 /* CoreGraphics.framework */; };
 		BD8CCEFC1CA819F600B2E208 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CCEFB1CA819F600B2E208 /* UIKit.framework */; };
@@ -31,7 +30,6 @@
 		BD8CCEE71CA818BE00B2E208 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BD8CCEEA1CA818BE00B2E208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8CCEEC1CA818BE00B2E208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BD8CCEEF1CA818BE00B2E208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8CCEF11CA818BE00B2E208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8CCEF71CA819AD00B2E208 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
 		BD8CCEF91CA819EB00B2E208 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,7 +92,6 @@
 				BD8CCEE71CA818BE00B2E208 /* ViewController.m */,
 				BD8CCEE91CA818BE00B2E208 /* Main.storyboard */,
 				BD8CCEEC1CA818BE00B2E208 /* Assets.xcassets */,
-				BD8CCEEE1CA818BE00B2E208 /* LaunchScreen.storyboard */,
 				BD8CCEF11CA818BE00B2E208 /* Info.plist */,
 				BD8CCEE01CA818BE00B2E208 /* Supporting Files */,
 			);
@@ -168,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8CCEF81CA819AD00B2E208 /* Assets.bundle in Resources */,
-				BD8CCEF01CA818BE00B2E208 /* LaunchScreen.storyboard in Resources */,
 				BD8CCEED1CA818BE00B2E208 /* Assets.xcassets in Resources */,
 				BD8CCEEB1CA818BE00B2E208 /* Main.storyboard in Resources */,
 			);
@@ -199,14 +195,6 @@
 				BD8CCEEA1CA818BE00B2E208 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BD8CCEEE1CA818BE00B2E208 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD8CCEEF1CA818BE00B2E208 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
