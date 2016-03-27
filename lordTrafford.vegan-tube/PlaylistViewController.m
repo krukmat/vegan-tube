@@ -1,29 +1,14 @@
-// Copyright 2014 Google Inc. All rights reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
 #import "PlaylistViewController.h"
 
 @implementation PlaylistViewController
-NSArray *myColors;
+NSArray *videosToDisplay;
 Boolean videoSetLoaded = false;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
 
     
-  myColors = [NSArray arrayWithObjects: @"czF_UZMxQ1w", @"FFXCcbMNsjg", @"zugKbKk33QM", @"V3KPAWvJ29M", nil];
-
   // For a full list of player parameters, see the documentation for the HTML5 player
   // at: https://developers.google.com/youtube/player_parameters?playerVersion=HTML5
   NSDictionary *playerVars = @{
@@ -33,7 +18,7 @@ Boolean videoSetLoaded = false;
     @"showinfo" : @0,
     @"modestbranding" : @0
   };
-  NSString *videoId = @"czF_UZMxQ1w";
+  NSString *videoId = @"tk5XLWxYQyk";
   self.playerView.delegate = self;
   [self.playerView loadWithVideoId:videoId playerVars:playerVars];
   [[NSNotificationCenter defaultCenter] addObserver:self
@@ -45,8 +30,7 @@ Boolean videoSetLoaded = false;
 - (IBAction)buttonPressed:(id)sender {
   if (sender == self.playButton) {
       [[NSNotificationCenter defaultCenter] postNotificationName:@"Playback started" object:self];
-      [self.playerView loadPlaylistByVideos:myColors index:0 startSeconds:0 suggestedQuality:kYTPlaybackQualityAuto];
-      //[self.playerView playVideo];
+      [self.playerView playVideo];
   } else if (sender == self.pauseButton) {
     [self.playerView pauseVideo];
   } else if (sender == self.stopButton) {
@@ -57,6 +41,17 @@ Boolean videoSetLoaded = false;
   } else if (sender == self.previousVideoButton) {
     [self appendStatusText:@"Loading previous video in playlist\n"];
     [self.playerView previousVideo];
+  } else if (sender == self.reverseButton) {
+      float seekToTime = self.playerView.currentTime - 30.0;
+      [self.playerView seekToSeconds:seekToTime allowSeekAhead:YES];
+      [self appendStatusText:[NSString stringWithFormat:@"Seeking to time: %.0f seconds\n", seekToTime]];
+  } else if (sender == self.forwardButton) {
+      float seekToTime = self.playerView.currentTime + 30.0;
+      [self.playerView seekToSeconds:seekToTime allowSeekAhead:YES];
+      [self appendStatusText:[NSString stringWithFormat:@"Seeking to time: %.0f seconds\n", seekToTime]];
+  } else if (sender == self.startButton) {
+      [self.playerView seekToSeconds:0 allowSeekAhead:YES];
+      [self appendStatusText:@"Seeking to beginning\n"];
   }
 }
 

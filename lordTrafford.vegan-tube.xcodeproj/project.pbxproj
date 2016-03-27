@@ -16,7 +16,6 @@
 		BD8CCEFC1CA819F600B2E208 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CCEFB1CA819F600B2E208 /* UIKit.framework */; };
 		BD8CCEFE1CA81A0D00B2E208 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CCEFD1CA81A0D00B2E208 /* Foundation.framework */; };
 		BD8CCF041CA81A4C00B2E208 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CCF001CA81A4C00B2E208 /* YTPlayerView.m */; };
-		BD8CCF051CA81A4C00B2E208 /* SingleVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CCF031CA81A4C00B2E208 /* SingleVideoViewController.m */; };
 		BD8CCF071CA81A5200B2E208 /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CCF061CA81A5200B2E208 /* PlaylistViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		BD8CCEFF1CA81A4C00B2E208 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		BD8CCF001CA81A4C00B2E208 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		BD8CCF011CA81A4C00B2E208 /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
-		BD8CCF021CA81A4C00B2E208 /* SingleVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleVideoViewController.h; sourceTree = "<group>"; };
-		BD8CCF031CA81A4C00B2E208 /* SingleVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleVideoViewController.m; sourceTree = "<group>"; };
 		BD8CCF061CA81A5200B2E208 /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +77,6 @@
 				BD8CCEFF1CA81A4C00B2E208 /* YTPlayerView.h */,
 				BD8CCF001CA81A4C00B2E208 /* YTPlayerView.m */,
 				BD8CCF011CA81A4C00B2E208 /* PlaylistViewController.h */,
-				BD8CCF021CA81A4C00B2E208 /* SingleVideoViewController.h */,
-				BD8CCF031CA81A4C00B2E208 /* SingleVideoViewController.m */,
 				BD8CCEF71CA819AD00B2E208 /* Assets.bundle */,
 				BD8CCEE31CA818BE00B2E208 /* AppDelegate.h */,
 				BD8CCEE41CA818BE00B2E208 /* AppDelegate.m */,
@@ -172,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8CCF051CA81A4C00B2E208 /* SingleVideoViewController.m in Sources */,
 				BD8CCF071CA81A5200B2E208 /* PlaylistViewController.m in Sources */,
 				BD8CCEE51CA818BE00B2E208 /* AppDelegate.m in Sources */,
 				BD8CCF041CA81A4C00B2E208 /* YTPlayerView.m in Sources */,

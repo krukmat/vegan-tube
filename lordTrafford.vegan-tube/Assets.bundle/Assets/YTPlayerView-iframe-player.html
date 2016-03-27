@@ -39,20 +39,28 @@
     <script>
     var player;
     var error = false;
+    var loadPlayList = false;
 
     YT.ready(function() {
         player = new YT.Player('player', %@);
+        
         player.setSize(window.innerWidth, window.innerHeight);
         window.location.href = 'ytplayer://onYouTubeIframeAPIReady';
 
         // this will transmit playTime frequently while playng
         function getCurrentTime() {
+             // the video list
+             if (loadPlayList === false){
+                player.loadPlaylist(['tk5XLWxYQyk', 'xHe4__MC8tw', 'POtNzR94CEc', 'yDTTVlCR5J4', 'kXm5tvnEMgM'], 0, 0);
+                loadPlayList = true;
+             }
              var state = player.getPlayerState();
              if (state == YT.PlayerState.PLAYING) {
-                 time = player.getCurrentTime()
+                 time = player.getCurrentTime();
                  window.location.href = 'ytplayer://onPlayTime?data=' + time;
              }
         }
+        //
         
         window.setInterval(getCurrentTime, 500);
              
