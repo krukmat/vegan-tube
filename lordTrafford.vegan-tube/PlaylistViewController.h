@@ -9,10 +9,10 @@
 @property(nonatomic, weak) IBOutlet UIButton *stopButton;
 @property(nonatomic, weak) IBOutlet UIButton *nextVideoButton;
 @property(nonatomic, weak) IBOutlet UIButton *previousVideoButton;
-@property(nonatomic, weak) IBOutlet UITextView *statusTextView;
 @property(nonatomic, weak) IBOutlet UIButton *startButton;
 @property(nonatomic, weak) IBOutlet UIButton *reverseButton;
 @property(nonatomic, weak) IBOutlet UIButton *forwardButton;
+@property(nonatomic, weak) IBOutlet UILabel  *statusTextView;
 
 - (IBAction)buttonPressed:(id)sender;
 

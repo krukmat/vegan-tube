@@ -94,6 +94,12 @@
                                             <action selector="buttonPressed:" destination="MyW-8f-AYn" eventType="touchUpInside" id="SJ6-H5-NqB"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6u-zF-Tkj">
+                                        <rect key="frame" x="8" y="12" width="200" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -143,6 +149,7 @@
                         <outlet property="previousVideoButton" destination="Ct5-yw-TI2" id="pr6-b8-GDL"/>
                         <outlet property="reverseButton" destination="1R6-w8-xzB" id="kbb-aj-1I9"/>
                         <outlet property="startButton" destination="lMM-TN-4et" id="EaS-pg-OV3"/>
+                        <outlet property="statusTextView" destination="Z6u-zF-Tkj" id="Dfd-MJ-9Zy"/>
                         <outlet property="stopButton" destination="5b7-US-lRD" id="FQL-Aa-wbL"/>
                     </connections>
                 </viewController>

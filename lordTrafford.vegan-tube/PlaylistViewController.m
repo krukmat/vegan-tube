@@ -27,6 +27,10 @@ Boolean videoSetLoaded = false;
                                              object:nil];
 }
 
+- (void)playerView:(nonnull YTPlayerView *)playerView didPlayTime:(float)playTime {
+    [self appendStatusText:[NSString stringWithFormat:@"%.0f seconds\n", playTime]];
+}
+
 - (IBAction)buttonPressed:(id)sender {
   if (sender == self.playButton) {
       [[NSNotificationCenter defaultCenter] postNotificationName:@"Playback started" object:self];
@@ -67,13 +71,7 @@ Boolean videoSetLoaded = false;
  * @param status a string describing current player state
  */
 - (void)appendStatusText:(NSString*)status {
-  [self.statusTextView setText:[self.statusTextView.text stringByAppendingString:status]];
-  NSRange range = NSMakeRange(self.statusTextView.text.length - 1, 1);
-
-  // To avoid dizzying scrolling on appending latest status.
-  self.statusTextView.scrollEnabled = NO;
-  [self.statusTextView scrollRangeToVisible:range];
-  self.statusTextView.scrollEnabled = YES;
+  [self.statusTextView setText:status];
 }
 
 @end
